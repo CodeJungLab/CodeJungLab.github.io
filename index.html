@@ -6,7 +6,7 @@
 <title>정원 교수 (Won Jung, Professor Emeritus) - 대구대학교 명예교수 Profile</title>
 <meta name="description" content="정원 교수 — 대구대학교 산업공학 명예교수, 전 공과대학장, 전 한국신뢰성학회 회장. 신뢰성공학 기반 기업용 AI 시스템 연구. Won Jung, Professor Emeritus of Industrial Engineering, Daegu University.">
 <!-- ▼ 기존 index.html에 있던 google-site-verification, naver-site-verification 메타 태그 두 줄을 여기에 그대로 붙여 넣으세요 ▼ -->
-   <meta name="google-site-verification" content="zcXLzrhhqSB2t0VJLlvnMyC6LnVHe909VAcw4NS9ZOY" />
+  <meta name="google-site-verification" content="zcXLzrhhqSB2t0VJLlvnMyC6LnVHe909VAcw4NS9ZOY" />
     <meta name="naver-site-verification" content="405d1118c6f37a533cd3f9f7ff9546dc91684279" />
 <!-- ▲ -->
 <link rel="canonical" href="https://codejunglab.github.io/">
@@ -24,6 +24,7 @@
   ],
   "knowsAbout": ["Industrial Engineering", "Reliability Engineering", "Enterprise AI Dependability", "Runtime Governance"],
   "url": "https://codejunglab.github.io/",
+  "image": "https://codejunglab.github.io/won-jung.jpg",
   "sameAs": [
     "https://playtechtrend.com/",
     "https://www.linkedin.com/in/won-jung-183031390/",
@@ -57,6 +58,9 @@
   td { border-top:1px solid var(--line); padding:6px 8px; vertical-align:top; }
   td:first-child { white-space:nowrap; color:var(--muted); width:1%; }
   .box { background:var(--soft); border:1px solid var(--line); border-radius:8px; padding:14px 18px; margin:16px 0; }
+  .profile { display:flex; align-items:center; gap:20px; }
+  .profile img { width:120px; height:120px; border-radius:50%; object-fit:cover; border:1px solid var(--line); flex-shrink:0; }
+  @media (max-width:520px) { .profile { flex-direction:column; text-align:center; } nav.lang { justify-content:center; } }
   footer { margin-top:56px; color:var(--muted); font-size:.85rem; border-top:1px solid var(--line); padding-top:14px; }
 </style>
 </head>
@@ -64,9 +68,14 @@
 <main>
 
 <header>
-  <h1>정원 교수 (Won Jung)</h1>
-  <p class="sub">대구대학교 산업공학 명예교수 · Professor Emeritus of Industrial Engineering, Daegu University</p>
-  <nav class="lang"><a href="#ko">한국어</a><a href="#en">English</a></nav>
+  <div class="profile">
+    <img src="won-jung.jpg" alt="정원 교수 (Won Jung) 대구대학교 명예교수" width="120" height="120">
+    <div>
+      <h1>정원 교수 (Won Jung)</h1>
+      <p class="sub">대구대학교 산업공학 명예교수 · Professor Emeritus of Industrial Engineering, Daegu University</p>
+      <nav class="lang"><a href="#ko">한국어</a><a href="#en">English</a></nav>
+    </div>
+  </div>
 </header>
 
 <!-- ===================== 한국어 ===================== -->
