@@ -1,159 +1,206 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- 
-      1. SEO: This is the title that appears on the Google/Naver search result. (Updated to 'Won Jung')
-    -->
-    <title>정원 교수 (Won Jung, Professor Emeritus) - Profile</title>
-    
-    <!-- 
-      2. SEO: This is the description that appears under the title in search results. (Updated to 'Won Jung')
-    -->
-    <meta name="description" content="Won Jung, Professor Emeritus of Industrial Engineering at Daegu University. Profile, industry projects, and blog.">
-
-    <meta name="google-site-verification" content="zcXLzrhhqSB2t0VJLlvnMyC6LnVHe909VAcw4NS9ZOY" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>정원 교수 (Won Jung, Professor Emeritus) - 대구대학교 명예교수 Profile</title>
+<meta name="description" content="정원 교수 — 대구대학교 산업공학 명예교수, 전 공과대학장, 전 한국신뢰성학회 회장. 신뢰성공학 기반 기업용 AI 시스템 연구. Won Jung, Professor Emeritus of Industrial Engineering, Daegu University.">
+<!-- ▼ 기존 index.html에 있던 google-site-verification, naver-site-verification 메타 태그 두 줄을 여기에 그대로 붙여 넣으세요 ▼ -->
+   <meta name="google-site-verification" content="zcXLzrhhqSB2t0VJLlvnMyC6LnVHe909VAcw4NS9ZOY" />
     <meta name="naver-site-verification" content="405d1118c6f37a533cd3f9f7ff9546dc91684279" />
-
-    <!-- Basic Professional Styling -->
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        header {
-            text-align: center;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 20px;
-        }
-        header h1 {
-            margin-bottom: 0;
-            color: #111;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #555;
-        }
-        section {
-            margin-top: 30px;
-        }
-        h2 {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-            color: #0056b3; /* A professional blue color */
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .contact-info {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        /* Custom style to make the image appear centered and circular */
-        .profile-img {
-            width: 150px; 
-            height: 150px; 
-            border-radius: 50%; 
-            object-fit: cover; 
-            margin-bottom: 10px;
-            border: 4px solid #f0f0f0; /* Optional: light border for separation */
-        }
-    </style>
+<!-- ▲ -->
+<link rel="canonical" href="https://codejunglab.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Won Jung",
+  "alternateName": ["정원", "정원 교수"],
+  "jobTitle": "Professor Emeritus",
+  "affiliation": {"@type": "CollegeOrUniversity", "name": "Daegu University"},
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "Hanyang University"},
+    {"@type": "CollegeOrUniversity", "name": "Wayne State University"}
+  ],
+  "knowsAbout": ["Industrial Engineering", "Reliability Engineering", "Enterprise AI Dependability", "Runtime Governance"],
+  "url": "https://codejunglab.github.io/",
+  "sameAs": [
+    "https://playtechtrend.com/",
+    "https://www.linkedin.com/in/won-jung-183031390/",
+    "https://www.dbpia.co.kr/author/authorDetail?ancId=547290805",
+    "https://www.researchgate.net/scientific-contributions/Won-Jung-2162918094"
+  ]
+}
+</script>
+<style>
+  :root { --text:#1f2328; --muted:#59636e; --line:#d8dee4; --accent:#0b5cad; --bg:#ffffff; --soft:#f6f8fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text:#e6edf3; --muted:#9198a1; --line:#30363d; --accent:#58a6ff; --bg:#0d1117; --soft:#161b22; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family: -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+         line-height:1.75; font-size:16px; }
+  main { max-width: 820px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { border-bottom:1px solid var(--line); padding-bottom:20px; margin-bottom:8px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; line-height:1.3; }
+  .sub { color:var(--muted); margin:0; }
+  nav.lang { margin-top:14px; display:flex; gap:10px; }
+  nav.lang a { border:1px solid var(--line); border-radius:6px; padding:4px 12px; text-decoration:none; color:var(--accent); font-size:.95rem; }
+  h2 { font-size:1.45rem; margin:48px 0 8px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  h3 { font-size:1.1rem; margin:28px 0 6px; }
+  p { margin: 0 0 14px; }
+  ul { padding-left: 20px; margin: 0 0 14px; }
+  li { margin: 2px 0; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width:100%; margin: 4px 0 16px; font-size:.95rem; }
+  td { border-top:1px solid var(--line); padding:6px 8px; vertical-align:top; }
+  td:first-child { white-space:nowrap; color:var(--muted); width:1%; }
+  .box { background:var(--soft); border:1px solid var(--line); border-radius:8px; padding:14px 18px; margin:16px 0; }
+  footer { margin-top:56px; color:var(--muted); font-size:.85rem; border-top:1px solid var(--line); padding-top:14px; }
+</style>
 </head>
 <body>
+<main>
 
-    <header>
-        <!-- 
-          Profile picture of Professor Won Jung.
-          Upload a file named "profile.jpg" to GitHub for this to appear.
-        -->
-        <img src="profile.jpg" 
-             alt="Profile picture of Professor Won Jung" 
-             class="profile-img">
+<header>
+  <h1>정원 교수 (Won Jung)</h1>
+  <p class="sub">대구대학교 산업공학 명예교수 · Professor Emeritus of Industrial Engineering, Daegu University</p>
+  <nav class="lang"><a href="#ko">한국어</a><a href="#en">English</a></nav>
+</header>
 
-        <!-- Updated Title: Changed to 'Won Jung' -->
-        <h1>정원 교수 (Won Jung, Professor Emeritus)</h1>
-        
-        <p>Daegu University | S. Korea</p>
-    </header>
+<!-- ===================== 한국어 ===================== -->
+<section id="ko" lang="ko">
+<h2>정원 교수</h2>
 
-    <main>
-        
-        <section id="about">
-            <h2>A Passion for Making Things Work Better</h2>
-            <p>
-                Hello, I'm **Won Jung**. For my entire career, I've been fascinated by a single question: "How can we make this process smarter, faster and more efficient?" That core passion is what Industrial Engineering means to me, and it's a journey I'm still on.
-            </p>
-            <p>
-                This site is my new 'project.' It's my digital home to share the ideas, research, and practical projects I've been fortunate to be a part of. My career as a professor and Dean at Daegu University, and as a consultant for industry leaders like Samsung and Hyundai, has always been about one thing: bridging the gap between academic theory and real-world results.
-            </p>
-            <p>
-                If you're also passionate about smart manufacturing, reliable systems, or just the art of solving complex problems, you're in the right place. Welcome.
-            </p>
-        </section>
+<p><strong>정원</strong>(Won Jung)은 대한민국의 대학교수이자 산업공학자로, 대구대학교 산업공학 명예교수이다. 대구대학교 공과대학장(2012~2014)과 한국신뢰성학회 제6대 회장(2011~2012)을 지냈다. 신뢰성공학과 제품안전 분야에서 오랫동안 교육과 연구를 해 왔으며, 현재는 신뢰성공학을 바탕으로 기업용 AI 시스템의 신뢰성과 운영 거버넌스를 연구하고 있다.</p>
 
-        
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <ul>
-                <li><strong>명예교수 (Professor Emeritus)</strong>, 대구대학교 (Daegu University)</li>
-                <li><strong>교수 (Professor)</strong>, 대구대학교 산업경영공학과 (Dept. of Industrial Management Engineering, Daegu University)</li>
-                <li><strong>학장 (Dean)</strong>, 공과대학 (College of Engineering, Daegu University)</li>
-                <li><strong>Professor</strong>, The College of New Jersey, School of Technology</li>
-                <li><strong>Visiting Scholar</strong>, University of Washington, Dept. of Industrial Engineering.</li>
-                <li><strong>회장 (President)</strong>, The Korean Reliability Society</li>
-            </ul>
-        </section>
+<h3>학력과 초기 경력</h3>
+<p>경북고등학교와 한양대학교 산업공학과(1982년 학사)를 졸업했다. 미국 웨인주립대학교(Wayne State University)에서 산업공학 석사(1986)와 박사(1990) 학위를 받았다. 박사 학위 취득 후 1990년부터 1992년까지 미국 트렌턴주립대학(Trenton State College, 현 The College of New Jersey) 교수로 재직했다.</p>
 
-        
-        <section id="projects">
-            <h2>Industry Projects & Technical Courses</h2>
-            <p>I have had the pleasure of collaborating with many industry leaders and government bodies, including:</p>
-            <ul>
-                <li>Leading companies such as Samsung Electronics, Hyundai Motors, LG Electronics, and many others.</li>
-                <li>Various government-led projects.</li>
-            </ul>
-        </section>
+<h3>대구대학교 재직</h3>
+<p>1992년 대구대학교 산업경영공학과 교수로 부임해 2020년 2월 정년퇴임할 때까지 신뢰성공학, 제품안전설계, 제조물책임 분야를 가르치고 연구했다. 1999년부터 2000년까지는 미국 워싱턴대학교(University of Washington) 산업공학과 방문학자로 연구했다. 2012년 3월부터 2014년 2월까지 대구대학교 공과대학장을 맡았다. 정년퇴임 이후 대구대학교 명예교수로 있다.</p>
 
-        
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Ph.D. in Industrial Engineering</strong>, Wayne State University</li>
-                <li><strong>B.S. in 산업공학 (Industrial Engineering)</strong>, 한양대학교 (Hanyang University)</li>
-                <li><strong>경북고등학교</strong> (Kyeongbuk High School)</li>
-            </ul>
-        </section>
+<h3>학회 및 산업계 활동</h3>
+<p>2011년부터 2012년까지 한국신뢰성학회 제6대 회장을 지냈으며, 2014년 한국신뢰성학회 신뢰성 학술상을 받았다. 삼성전자, 현대자동차, LG전자 등 국내 주요 기업을 대상으로 신뢰성공학과 제품안전 분야의 기술 자문과 교육을 했고, 정부가 지원하는 여러 산업기술 연구개발 과제에 참여했다. 산학연 기술개발에 기여한 공로로 2008년과 2012년 두 차례 지식경제부 장관 표창을 받았고, 2020년 교육 발전에 이바지한 공로로 근정포장을 받았다.</p>
 
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p>
-                    You can find me on my blog, Facebook, and LinkedIn for professional inquiries.
-                </p>
-                <p>
-                    <!-- Blog site -->
-                    <strong>Blog:</strong> <a href="https://playtechtrend.com/" target="_blank">AI Insights Worldwide</a><br>
-                    <!-- TODO: Replace the "..." with the actual URL to your Facebook profile -->
-                    <strong>Facebook:</strong> <a href="https://www.facebook.com/..." target="_blank">Won Jung</a><br>
-                    <!-- TODO: Replace the "..." with the actual URL to your LinkedIn profile -->
-                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/..." target="_blank">Code Jung</a>
-                </p>
-            </div>
-        </section>
+<h3>연구</h3>
+<p>주요 연구 분야는 신뢰성공학, 정량적 안전평가, 신뢰성 보증, 무기체계의 RAM(신뢰도·가용도·정비도) 분석, 예방정비이다. 대부분의 논문은 한국신뢰성학회의 《신뢰성응용연구》에 발표되었으며, 학술 데이터베이스 DBpia에 47편의 논문이 수록되어 있다. 2010년대 후반에는 빅데이터와 머신러닝을 무기체계의 고장률과 정비도 예측에 적용하는 연구를 했다.</p>
+<p>정년퇴임 이후에는 기업용 AI 시스템의 종합적 신뢰성(Dependability)과 실행 시점 거버넌스(Runtime Governance)에 관한 기술 저술을 하고 있다. 개별 AI의 작업 능력과 기업 AI 시스템 전체의 신뢰성을 구분하고, AI 운영 통제 구조로 '4대 실행 시점 거버넌스 기둥(Four Runtime Governance Pillars)'을 제안했다. 이러한 글은 기술 정보 웹사이트 <a href="https://playtechtrend.com/">AI Insights Worldwide</a>에 발표하고 있다.</p>
 
-    </main>
+<div class="box">
+<h3 style="margin-top:0">경력</h3>
+<table>
+<tr><td>2020.03 ~</td><td>대구대학교 명예교수</td></tr>
+<tr><td>2012.03 ~ 2014.02</td><td>대구대학교 공과대학장</td></tr>
+<tr><td>2011 ~ 2012</td><td>한국신뢰성학회 제6대 회장</td></tr>
+<tr><td>1999 ~ 2000</td><td>미국 워싱턴대학교 방문학자</td></tr>
+<tr><td>1992 ~ 2020.02</td><td>대구대학교 산업경영공학과 교수</td></tr>
+<tr><td>1990 ~ 1992</td><td>미국 트렌턴주립대학(현 The College of New Jersey) 교수</td></tr>
+</table>
 
+<h3>학력</h3>
+<table>
+<tr><td>1990</td><td>미국 웨인주립대학교 산업공학 박사</td></tr>
+<tr><td>1986</td><td>미국 웨인주립대학교 산업공학 석사</td></tr>
+<tr><td>1982</td><td>한양대학교 산업공학과 학사</td></tr>
+<tr><td></td><td>경북고등학교 졸업</td></tr>
+</table>
+
+<h3>수상</h3>
+<table>
+<tr><td>2020</td><td>근정포장</td></tr>
+<tr><td>2014</td><td>한국신뢰성학회 신뢰성 학술상</td></tr>
+<tr><td>2012</td><td>지식경제부 장관 표창</td></tr>
+<tr><td>2008</td><td>지식경제부 장관 표창</td></tr>
+</table>
+
+<h3>저서</h3>
+<ul>
+<li>《신뢰성공학》(김준홍 공저), 교문사, 2017</li>
+<li>《확률과 통계》(공저), 교문사(청문각), 2009</li>
+<li>《제조물책임과 제품안전》(공저), 교우사, 2004</li>
+</ul>
+
+<h3>주요 논문</h3>
+<ul>
+<li>정원 (2009). 「위험관리시스템 구축을 위한 정량적 안전평가 절차」. 《신뢰성응용연구》 9(3), 165–176.</li>
+<li>Ismail, A., 정원 (2013). 「자동차 고장예지시스템의 기술동향 연구」. 《산업경영시스템학회지》 36(1), 78–85.</li>
+<li>김인석, 정원 (2017). 「RAM 분석 정확도 향상을 위한 야전운용 데이터의 이상값과 결측값 처리 방안」. 《신뢰성응용연구》 17(3), 264–271.</li>
+<li>탁정호, 정원 (2018). 「빅데이터를 활용한 레이더 시스템의 SRU 단위 고장률 예측방안」. 《신뢰성응용연구》 18(4), 339–348.</li>
+<li>김인석, 탁정호, 정원 (2018). 「머신러닝 기법을 활용한 무기체계의 정비도 예측 방안」. 한국신뢰성학회 2018 추계학술대회.</li>
+</ul>
+</div>
+</section>
+
+<!-- ===================== English ===================== -->
+<section id="en" lang="en">
+<h2>Won Jung</h2>
+
+<p><strong>Won Jung</strong> (Korean: 정원) is a South Korean professor and industrial engineer. He is Professor Emeritus of Industrial Engineering at Daegu University, where he served as Dean of the College of Engineering (2012–2014). He was the sixth President of the Korean Reliability Society (2011–2012). His career has centered on reliability engineering and product safety, and his current work applies reliability engineering to the dependability and runtime governance of enterprise AI systems.</p>
+
+<h3>Education and early career</h3>
+<p>Jung graduated from Kyeongbuk High School and received a B.S. in Industrial Engineering from Hanyang University in 1982. He earned an M.S. (1986) and a Ph.D. (1990) in Industrial Engineering from Wayne State University in the United States. From 1990 to 1992 he was a professor at Trenton State College, now The College of New Jersey.</p>
+
+<h3>Daegu University</h3>
+<p>In 1992 Jung joined the Department of Industrial and Management Engineering at Daegu University, where he taught and researched reliability engineering, product safety design and product liability until his retirement in February 2020. He was a visiting scholar in industrial engineering at the University of Washington from 1999 to 2000. From March 2012 to February 2014 he served as Dean of the College of Engineering. He has been Professor Emeritus since his retirement.</p>
+
+<h3>Professional service and industry work</h3>
+<p>Jung served as the sixth President of the Korean Reliability Society from 2011 to 2012 and received the society's Reliability Academic Award in 2014. He provided technical consulting and training in reliability engineering and product safety to major Korean companies, including Samsung Electronics, Hyundai Motor Company and LG Electronics, and took part in government-funded industrial research projects. He received the Commendation of the Minister of Knowledge Economy in 2008 and 2012 for contributions to industry–academia technology development, and the Service Merit Medal (근정포장) of the Republic of Korea in 2020 for his contributions to education.</p>
+
+<h3>Research</h3>
+<p>His research covers reliability engineering, quantitative safety assessment, reliability assurance, RAM (reliability, availability and maintainability) analysis of weapon systems, and preventive maintenance. Most of his papers appeared in the Korean Reliability Society's <em>Journal of Applied Reliability</em>, and 47 of his papers are indexed in the DBpia academic database. In the late 2010s he applied big data and machine learning to failure-rate and maintainability prediction for weapon systems.</p>
+<p>Since retiring, Jung has written on the dependability and runtime governance of enterprise AI systems. His writing distinguishes the task performance of individual AI models from the dependability of an organization's AI system as a whole, and proposes an operational control structure he calls the Four Runtime Governance Pillars. These articles are published on his technology website, <a href="https://playtechtrend.com/">AI Insights Worldwide</a>.</p>
+
+<div class="box">
+<h3 style="margin-top:0">Career</h3>
+<table>
+<tr><td>2020–present</td><td>Professor Emeritus, Daegu University</td></tr>
+<tr><td>2012–2014</td><td>Dean, College of Engineering, Daegu University</td></tr>
+<tr><td>2011–2012</td><td>6th President, Korean Reliability Society</td></tr>
+<tr><td>1999–2000</td><td>Visiting Scholar, University of Washington</td></tr>
+<tr><td>1992–2020</td><td>Professor, Dept. of Industrial and Management Engineering, Daegu University</td></tr>
+<tr><td>1990–1992</td><td>Professor, Trenton State College (now The College of New Jersey)</td></tr>
+</table>
+
+<h3>Education</h3>
+<table>
+<tr><td>1990</td><td>Ph.D. in Industrial Engineering, Wayne State University</td></tr>
+<tr><td>1986</td><td>M.S. in Industrial Engineering, Wayne State University</td></tr>
+<tr><td>1982</td><td>B.S. in Industrial Engineering, Hanyang University</td></tr>
+</table>
+
+<h3>Honors</h3>
+<table>
+<tr><td>2020</td><td>Service Merit Medal (근정포장), Republic of Korea</td></tr>
+<tr><td>2014</td><td>Reliability Academic Award, Korean Reliability Society</td></tr>
+<tr><td>2012</td><td>Commendation of the Minister of Knowledge Economy</td></tr>
+<tr><td>2008</td><td>Commendation of the Minister of Knowledge Economy</td></tr>
+</table>
+
+<h3>Books</h3>
+<ul>
+<li><em>Reliability Engineering</em> (신뢰성공학), with Kim Jun-hong, Gyomoon, 2017</li>
+<li><em>Probability and Statistics</em> (확률과 통계), co-author, Gyomoon (Cheongmungak), 2009</li>
+<li><em>Product Liability and Product Safety</em> (제조물책임과 제품안전), co-author, Gyowoosa, 2004</li>
+</ul>
+</div>
+</section>
+
+<!-- ===================== Links ===================== -->
+<section id="links">
+<h2>Links · 링크</h2>
+<ul>
+<li>Blog · 블로그: <a href="https://playtechtrend.com/">AI Insights Worldwide</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/won-jung-183031390/">Won Jung</a></li>
+<li>DBpia: <a href="https://www.dbpia.co.kr/author/authorDetail?ancId=547290805">정원 (Won Jung) 논문</a></li>
+<li>ResearchGate: <a href="https://www.researchgate.net/scientific-contributions/Won-Jung-2162918094">Won Jung</a></li>
+<!-- Facebook을 넣으려면 실제 주소로 바꾼 뒤 아래 줄의 주석 표시를 지우세요 -->
+<!-- <li>Facebook: <a href="https://www.facebook.com/실제주소">Won Jung</a></li> -->
+</ul>
+</section>
+
+<footer>© Won Jung (정원). 대구대학교 명예교수 · Professor Emeritus, Daegu University.</footer>
+</main>
 </body>
 </html>
